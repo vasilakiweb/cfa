@@ -1,0 +1,27 @@
+// ===== Banner =====
+.about-us {
+    &-description {
+        color: $blueColorText;
+        line-height: 26px;
+        text-indent: 20px;
+        flex: 0 1 60%;
+        padding-right: 40px;
+    }
+    &-banner {
+        background-image: url(./images/about-us/banner-bg.jpg);
+    }
+    &-story--flex {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+    }
+    &-image {
+        flex: 0 1 40%;
+        overflow: hidden;
+        height: 100%;
+    }
+    &-story-image {
+        width: 600px;
+        margin-left: -150px;
+    }
+}

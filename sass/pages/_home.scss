@@ -1,0 +1,104 @@
+// # Home specific styles
+
+// ===== Banner =====
+.banner {
+    &--home {
+        background-image: url(./images/home/banner/banner-bg.jpg);
+    }
+}
+
+// ===== Services =====
+.services {
+    background-color: $silverColor;
+    color: #000;
+    &--flex {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__block {
+        text-align: center;
+        cursor: pointer;
+        flex: 0 1 50%;
+        background-color: #efeeee;
+        transition: all 0.3s;
+        &:hover {
+            @include blueColorBg (1);
+        }
+        &:hover .services__subtitle{
+            @include greenColor (1);
+        }
+        &--border {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            border-top: 1px solid #cfcfd0;
+            &-left {
+                border-left: 1px solid #cfcfd0;
+            }
+        }
+        &--last {
+            flex: 0 1 100%;
+            border-bottom: 1px solid #cfcfd0;
+        }
+    }
+    &__subtitle {
+        @include Montserrat;
+        letter-spacing: 0.1em;
+        color: $silverColorText;
+        padding: 50px 0;
+    }
+}
+
+// ===== Map =====
+.map {
+    position: relative;
+    height: 700px;
+    &--flex {
+        height: 100%;
+    }
+    &__map {
+        @include size (100%, 100%);
+    }
+    &__info {
+        @include size (100%, auto);
+        @include greenColorBg (0.95);
+        padding: 50px 0;
+        position: absolute;
+        top: 0;
+        &--flex {
+            height: 100%;
+            display: flex;
+            align-items: flex-start;
+        }
+        &-left, &-right {
+            display: flex;
+            flex: 0 1 50%;
+        }
+        &-text {
+            margin-left: 30px;
+            padding-right: 100px;
+        }
+    }
+    &__image {
+        @include size (100px, 100px);
+        flex-shrink: 0;
+        &-2 {
+            @include size (70px, 70px);
+            flex-shrink: 0;
+        }
+    }
+    &__title {
+        @include Montserrat;
+        @include font-sw (28px, 700);
+        @include blueColor (1);
+        line-height: 1.5;
+    }
+    &__description {
+        font-size: 14px;
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+}

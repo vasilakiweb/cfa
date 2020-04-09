@@ -1,0 +1,65 @@
+// #Services page
+
+// ===== Banner =====
+.services-banner {
+    background-image: url(./images/services/banner-bg.jpg);
+}
+
+// ===== Akkordeon =====
+.akkordeon {
+    padding-bottom: 90px;
+    &__icon {
+        color: rgb(75, 99, 75);
+        transition: all 0.3s;
+    }
+    &__block {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        &:hover .akkordeon__icon{
+            @include greenColor (1);
+        }
+        &:hover .akkordeon__title{
+            @include greenColor (1);
+        }
+    }
+    &__title {
+        margin-left: 20px;
+        font-size: 20px;
+        transition: all 0.3s;
+    }
+    &__description {
+        color: $blueColorText;
+        display: block;
+        flex: 0 1 100%;
+        overflow: hidden;
+        height: 0;
+        opacity: 0;
+        transition: all 0.7s;
+        &--on {
+            height: auto;
+            opacity: 1;
+        }
+    }
+    &__text {
+        margin-top: 20px;
+    }
+    &__text-items {
+        margin-left: 40px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    &__text-item {
+        line-height: 30px;
+        font-weight: 700;
+        &::before {
+            content: '-';
+            margin-right: 6px;
+        }
+    }
+}
+.display-none {
+    display: none;
+}

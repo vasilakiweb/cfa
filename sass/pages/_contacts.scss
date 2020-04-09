@@ -1,0 +1,38 @@
+// ===== Banner =====
+.contacts-banner {
+    background-image: url(./images/contacts/banner-bg.jpg);
+}
+.contacts-contacts {
+    background-color: $silverColor;
+    &__blocks {
+        display: flex;
+    }
+    &__block {
+        padding: 70px 0;
+        flex: 0 1 33.333%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        @include blueColor (1);
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.3s;
+        &:hover {
+            background-color: #fff;
+        }
+        &:hover .contacts-contacts__icon{
+            @include greenColor (1);
+        }
+    }
+    &__icon {
+        font-size: 70px;
+        transition: all 0.3s;
+    }
+    &__title {
+        margin-top: 20px;
+        font-size: 26px;
+    }
+    &__description {
+        margin-top: 20px;
+    }
+}

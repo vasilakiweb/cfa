@@ -1,0 +1,32 @@
+// # Sass Mixins
+
+@mixin font-sw ($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
+@mixin size ($width, $height) {
+    width: $width;
+    height: $height;
+}
+// Source Sans Pro
+@mixin ssp {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+// Montserrat
+@mixin Montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+// Main colors RGBA
+@mixin greenColor ($opacity) {
+    color: rgba(66, 145, 105, $opacity);
+}
+@mixin greenColorBg ($opacity) {
+    background-color: rgba(66, 145, 105, $opacity);
+}
+@mixin blueColor ($opacity) {
+    color: rgba(22, 25, 43, $opacity);
+}
+@mixin blueColorBg ($opacity) {
+    background-color: rgba(22, 25, 43, $opacity);
+}

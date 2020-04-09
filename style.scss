@@ -1,0 +1,23 @@
+// === Abstract ===
+@import './sass/abstact/variables';
+@import './sass/abstact/mixins';
+
+// === Base ===
+@import './sass/base/reset';
+
+// === Components ===
+@import './sass/components/buttons';
+
+// === Layout ===
+@import './sass/layout/all-pages';
+@import './sass/layout/header';
+@import './sass/layout/footer';
+
+// === Pages ===
+@import './sass/pages/home';
+@import './sass/pages/services';
+@import './sass/pages/our-team';
+@import "./sass/pages/about-us";
+@import './sass/pages/contacts';
+
+

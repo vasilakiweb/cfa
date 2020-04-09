@@ -1,0 +1,29 @@
+// # Footer
+.footer {
+    @include blueColorBg (1);
+    padding: 30px 0;
+    &--flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__copyright {
+        font-size: 14px;
+        color: rgb(128, 128, 128);
+    }
+    &__phone, &__phones {
+        color: rgb(128, 128, 128);
+    }
+    &__phone:hover {
+        @include greenColor (1);
+    }
+    &__icon {
+        cursor: pointer;
+        font-size: 24px;
+        margin-left: 10px;
+        transition: color 0.3s;
+        &:hover {
+            @include greenColor (1);
+        }
+    }
+}

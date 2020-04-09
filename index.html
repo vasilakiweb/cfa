@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFA Invest</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/de1d2bc078.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600,700&display=swap" rel="stylesheet">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header--flex container">
+            <span><a href="./index.html" class="logo">CFA Holding</a></span>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="./index.html" class="navigation__item">Home</a></li>
+                    <li><a href="./languages/en/main-pages/services.html" class="navigation__item">Services</a></li>
+                    <li><a href="./languages/en/main-pages/about-us.html" class="navigation__item">About us</a></li>
+                    <li><a href="./languages/en/main-pages/our-team.html" class="navigation__item">Our Team</a></li>
+                    <li><a href="./languages/en/main-pages/contacts.html" class="navigation__item">Contacts</a></li>
+                    <li>
+                        <select name="forma" onchange="location = this.value;"  class="navigation__item--language">
+                            <option value="./index.html">EN</option>
+                            <option value="./languages/md/main-pages/home.html">MD</option>
+                            <option value="./languages/ru/main-pages/home.html">RU</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <div class="banner banner--home">
+        <div class="banner__black"></div>
+        <div class="banner--flex container">
+            <h1 class="banner__title banner__title--mt">ABROAD WITHOUT SURPRISES</h1>
+            <a class="banner__button" href="./languages/en/main-pages/contacts.html"> Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div class="services section">
+        <h2 class="title">OUR SERVICES</h2>
+        <div class="services--flex">
+            <a href="./languages/en/main-pages/services.html" class="services__block">
+                <div class="services__block--border">
+                    <h3 class="subtitle services__subtitle">CORPORATE & FINANCIAL ADVISORY</h3>
+                </div>
+            </a>
+            <a href="./languages/en/main-pages/services.html" class="services__block">
+                <div class="services__block--border services__block--border-left">
+                    <h3 class="subtitle services__subtitle">RISK MANAGEMENT</h3>
+                </div>
+            </a>
+            <a href="./languages/en/main-pages/services.html" class="services__block">
+                <div class="services__block--border">
+                    <h3 class="subtitle services__subtitle">EXECUTIVE CONSULTING</h3>
+                </div>
+            </a>
+            <a href="./languages/en/main-pages/services.html" class="services__block">
+                <div class="services__block--border services__block--border-left">
+                    <h3 class="subtitle services__subtitle">COMPANY INTERNATIONALIZATION</h3>
+                </div>
+            </a>
+            <a href="./languages/en/main-pages/services.html" class="services__block">
+                <div class="services__block--border">
+                    <h3 class="subtitle services__subtitle">AGROINDUSTRY SPECIALIST ADVICE</h3>
+                </div>
+            </a>
+            <a href="./languages/en/main-pages/services.html" class="services__block">
+                <div class="services__block--border services__block--border-left">
+                    <h3 class="subtitle services__subtitle">COMMODITIES</h3>
+                </div>
+            </a>
+            <a href="./languages/en/main-pages/services.html" class="services__block services__block--last">
+                <div class="services__block--border">
+                    <h3 class="subtitle services__subtitle">BUSINESS OPPORTUNITIES</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Map -->
+    <div class="map">
+        <div class="map--flex">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2473.076699537895!2d-0.17884688468392065!3d51.69504150478781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487622baa4cea029%3A0x8879efd44199d7fe!2sMichael%20Filiou%20PLC!5e0!3m2!1sro!2s!4v1585852718642!5m2!1sro!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map__map"></iframe>
+            <div class="map__info">
+                <div class="map__info--flex container">
+                    <div class="map__info-left">
+                        <img src="./images/home/map/time.png" alt="Watch" class="map__image">
+                        <div class="map__info-text">
+                                <h3 class="map__title">WORKING HOURS</h3>
+                                <p class="map__description">Monday – Friday: 8:00 – 18:00 Hrs <br> Saturday: 8:00 – 16:00 Hrs</p>
+                        </div>
+                    </div>
+                    <div class="map__info-right">
+                        <img src="./images/home/map/place.png" alt="Place" class="map__image-2">
+                        <div class="map__info-text">
+                            <h3 class="map__title">WE ARE HERE</h3>
+                            <p class="map__description"> Address: CFA Holding Group Ltd Michael Filiou Plc Salisbury House, 81 High Street, Potters Bar, Hertfordshire, England, EN6 5AS <br> Phone: (+44)2032399140 <br> Email: admin@cfaholding.eu</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer--flex container">
+            <span class="footer__copyright">Copyright © 2020 CFA Holding Group Ltd</span>
+            <div class="footer__phones">
+                <h4>Phone:</h4>
+                <a href="tel:(+44)2032399140" class="footer__phone">(+44)2032399140</a><br>
+                <a href="tel:(+44) 2039052640" class="footer__phone">(+44) 2039052640</a><br>
+                <a href="tel:(+39)3663910500" class="footer__phone">(+39)3663910500</a>
+            </div>
+            <div class="footer__social-media">
+                <a href="https://web.facebook.com/cfaholding/?_rdc=1&_rdr"><i class="fab fa-facebook footer__icon"></i></a>
+                <a href="https://www.linkedin.com/in/cfa-h-g-ltd-london-639b7411a/"><i class="fab fa-linkedin footer__icon"></i></a>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>

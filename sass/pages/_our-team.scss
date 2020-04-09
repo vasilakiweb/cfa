@@ -1,0 +1,46 @@
+// ===== Banner =====
+.our-team-banner {
+    background-image: url(./images/our-team/banner-bg.jpg);
+}
+.our-team-main {
+    color: $silverColorText;
+    background-color: $silverColor;
+    &--flex {
+        display: flex;
+    }
+    &__image {
+        width: 200px;
+        flex-shrink: 0;
+        border-right: 5px solid transparent;
+        transition: all 0.3s;
+        &:hover {
+            border-right: 5px solid $greenColor;
+        }
+    }
+    &__text {
+        margin-left: 40px;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+.initials {
+    @include blueColor (0.9);
+}
+
+// ===== Departments =====
+.departments {
+    margin-top: 70px;
+    &__title {
+        margin-bottom: 30px;
+        text-align: left;
+    }
+    &__item {
+        line-height: 30px;
+        transition: all 0.5s;
+        &:hover {
+            margin-left: 20px;
+        }
+    }
+}
